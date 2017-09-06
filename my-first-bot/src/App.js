@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Header} from './components/Header'
 import ChatContainer from './containers/ChatContainer'
-import TokenInput from './components/TokenInput'
+import TokenInput from './containers/TokenInput'
 import {Footer} from './components/Footer'
 
 

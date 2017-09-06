@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Instructions from './Instructions'
-import Notification from './Notification'
+import Instructions from '../components/Instructions'
+import Notification from '../components/Notification'
 
 class TokenInput extends Component {
   constructor(props) {
