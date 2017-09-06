@@ -22,19 +22,14 @@ var client
 
 app.get('/', (req, res) => {
   res.send('Welcome to my app!')
-  console.log('token from the home: ', token)
-  console.log('client from the home: ', client)
   })
   .post('/createToken', (req, res) => {
     token = req.body.token
-    console.log('token: ', token)
     client = new recastai.request(token, 'en')
-    console.log('client: ', client)
     res.send('The token is in the place')
   })
   .post('/', (req, res) => {
   const input = req.body.userMessage.join()
-  console.log('input: ', input)
   client.converseText(input)
   .then(result => {
     const botReply = result.reply()
