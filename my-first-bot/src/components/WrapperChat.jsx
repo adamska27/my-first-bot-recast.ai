@@ -9,7 +9,7 @@ const Wrapper = styled.section`
   position: relative;
   height: 600px;
   width: 400px;
-  margin: 15px auto 0 auto;
+  margin: -45px auto 0 auto;
   padding: 15px;
   box-shadow: 0px 0px 3px 1px black;
   border-radius: 5% 0 0 5%;
@@ -21,17 +21,31 @@ const Wrapper = styled.section`
   {
   	width: 5;
   	background-color: #80d8ff;
-  }
+  };
   &::-webkit-scrollbar-thumb
   {
   	background-color: #01579b;
+  };
+  @media (max-width:455px) {
+    & {
+      width: 100%;
+    }
+  }
+`
+
+const ContainerWrapper = styled.div`
+  margin-bottom: 20px;
+  @media (max-width:455px) {
+    & {
+      width: 100%;
+    }
   }
 `
 
 const WrapperChat = (props) => {
   return(
-    <div style={{marginBottom: '50px'}}>
-      <form style={{position: 'relative', top: '645px', textAlign: 'center', zIndex: '50'}} onSubmit={props.onSubmit} >
+    <ContainerWrapper>
+      <form style={{position: 'relative', top: '585px', textAlign: 'center', zIndex: '50'}} onSubmit={props.onSubmit} >
         <UserInput value={props.value} onChange={props.onChange} />
       </form>
     <Wrapper>
@@ -50,7 +64,7 @@ const WrapperChat = (props) => {
             }
         </ul>
       </Wrapper>
-    </div>
+    </ContainerWrapper>
   )
 }
 

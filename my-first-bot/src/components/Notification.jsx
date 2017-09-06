@@ -2,14 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 
 const NotificationStyle = styled.p`
-  display: none;
+  visibility: hidden;
   width: 400px;
-  margin: 20px auto;
+  margin: auto;
   text-align: center;
   font-size: 20px;
   padding: 5px;
   background-color: #80d8ff;
   color: white;
+  z-index: 55;
 `
 
 const Notification = (props) => {

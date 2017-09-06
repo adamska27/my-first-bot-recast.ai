@@ -1,18 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Title = styled.h1`
-color: white;
-font-weight: bold;
-text-transform: uppercase;
+export const Title = styled.h1`
+  font-weight: bold;
+  text-transform: uppercase;
 `
 
-const Header = () => {
+export const HeaderStyle = styled.div`
+  width: 100%;
+  color: white;
+  background-color: #311B92;
+  text-align: center;
+  padding: 15px 0;
+`
+
+export const Header = () => {
   return(
-    <div style={{ width: '100%', backgroundColor: '#311B92', textAlign: 'center', padding: '15px 0'}}>
+    <HeaderStyle>
       <Title>Welcome, Human</Title>
-    </div>
+    </HeaderStyle>
   )
 }
-
-export default Header

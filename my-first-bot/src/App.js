@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Header from './components/Header'
+import {Header} from './components/Header'
 import ChatContainer from './containers/ChatContainer'
-// import Instructions from './components/Instructions'
 import TokenInput from './components/TokenInput'
+import {Footer} from './components/Footer'
 
 
 class App extends Component {
@@ -13,8 +13,8 @@ class App extends Component {
       <div className='main-content'>
         <TokenInput />
         <ChatContainer />
-        {/* <Instructions /> */}
       </div>
+      <Footer />
     </div>
     )
   }

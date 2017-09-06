@@ -19,8 +19,8 @@ class TokenInput extends Component {
   }
 
   handleSubmit(e) {
+    e.preventDefault()
     if (this.state.token) {
-      e.preventDefault()
       fetch('http://localhost:3001/createToken/', {
         method: 'POST',
         headers: {
