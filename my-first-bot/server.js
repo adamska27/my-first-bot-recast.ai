@@ -17,16 +17,10 @@ app.use(morgan(':method : url :status :res[content-length] - :response-time ms')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
-var token
-var client
+const client = new recastai.request('2acb39742532466c668899188d2d7b13', 'en')
 
 app.get('/', (req, res) => {
   res.send('Welcome to my app!')
-  })
-  .post('/createToken', (req, res) => {
-    token = req.body.token
-    client = new recastai.request(token, 'en')
-    res.send('The token is in the place')
   })
   .post('/', (req, res) => {
   const input = req.body.userMessage.join()

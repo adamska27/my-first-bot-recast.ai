@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {Header} from './components/Header'
 import ChatContainer from './containers/ChatContainer'
-import TokenInput from './containers/TokenInput'
 import {Footer} from './components/Footer'
 
 
@@ -11,7 +10,6 @@ class App extends Component {
     <div className='App'>
       <Header />
       <div className='main-content'>
-        <TokenInput />
         <ChatContainer />
       </div>
       <Footer />

@@ -65,7 +65,7 @@ class ChatContainer extends Component {
   render() {
     return (
       <div className="ChatContainer">
-        <h2>Second Step: Talk with the bot and try to say hello...</h2>
+        <h2>Talk with the bot and try to say hello...</h2>
         <WrapperChat conversation={this.state.conversation} value={this.state.userMessage.value} onChange={this.handleChange} onSubmit={this.handleSubmit}/>
         <Notification id='err' message='Erreur: You must write something...'/>
       </div>

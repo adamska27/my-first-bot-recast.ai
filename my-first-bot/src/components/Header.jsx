@@ -11,7 +11,7 @@ export const HeaderStyle = styled.div`
   color: white;
   background-color: #311B92;
   text-align: center;
-  padding: 15px 0;
+  padding: 10px 0;
 `
 
 export const Header = () => {
